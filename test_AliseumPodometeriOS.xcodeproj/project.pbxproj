@@ -17,6 +17,7 @@
 		9B22D68D2184BA4C00039EE6 /* deadPoolGray.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B22D68C2184BA4C00039EE6 /* deadPoolGray.json */; };
 		9B22D6902184C54E00039EE6 /* DataStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22D68F2184C54E00039EE6 /* DataStepsViewController.swift */; };
 		9B22D6922184C6D600039EE6 /* StepsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22D6912184C6D600039EE6 /* StepsTableViewCell.swift */; };
+		9B22D697218635E400039EE6 /* extensionUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22D696218635E400039EE6 /* extensionUIDevice.swift */; };
 		C2FD15118B14658CC1BD7C72 /* Pods_test_AliseumPodometeriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D79822E9839011596B50F3 /* Pods_test_AliseumPodometeriOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		9B22D68C2184BA4C00039EE6 /* deadPoolGray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deadPoolGray.json; sourceTree = "<group>"; };
 		9B22D68F2184C54E00039EE6 /* DataStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStepsViewController.swift; sourceTree = "<group>"; };
 		9B22D6912184C6D600039EE6 /* StepsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsTableViewCell.swift; sourceTree = "<group>"; };
+		9B22D696218635E400039EE6 /* extensionUIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIDevice.swift; sourceTree = "<group>"; };
 		FB36598E06A02EB2289CEC83 /* Pods-test_AliseumPodometeriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_AliseumPodometeriOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_AliseumPodometeriOS/Pods-test_AliseumPodometeriOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 		9B22D6662183239F00039EE6 /* test_AliseumPodometeriOS */ = {
 			isa = PBXGroup;
 			children = (
+				9B22D695218635C600039EE6 /* Helpers */,
 				9B22D6932185F38700039EE6 /* Views */,
 				9B22D68E2184C51A00039EE6 /* Controllers */,
 				9B22D6812184AD3800039EE6 /* LottieAnimations */,
@@ -128,6 +131,14 @@
 				9B22D670218323A200039EE6 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9B22D695218635C600039EE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9B22D696218635E400039EE6 /* extensionUIDevice.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 				9B22D6922184C6D600039EE6 /* StepsTableViewCell.swift in Sources */,
 				9B22D6902184C54E00039EE6 /* DataStepsViewController.swift in Sources */,
 				9B22D66A2183239F00039EE6 /* ViewController.swift in Sources */,
+				9B22D697218635E400039EE6 /* extensionUIDevice.swift in Sources */,
 				9B22D6682183239F00039EE6 /* AppDelegate.swift in Sources */,
 				9B22D67C2183241B00039EE6 /* HealthKitManager.swift in Sources */,
 			);

@@ -80,10 +80,10 @@ More Step</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-pA-rvD">
-                                        <rect key="frame" x="0.0" y="128" width="150" height="88.5"/>
+                                        <rect key="frame" x="0.0" y="128" width="150" height="51"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-QY-NAk">
-                                                <rect key="frame" x="0.0" y="19.5" width="150" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="150" height="50"/>
                                                 <color key="backgroundColor" red="0.43524378540000003" green="0.43532308939999997" blue="0.43523877859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Thq-hL-kmk"/>
@@ -99,7 +99,7 @@ More Step</string>
                                                 </connections>
                                             </button>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-Cq-2hO">
-                                                <rect key="frame" x="0.0" y="37.5" width="0.0" height="14"/>
+                                                <rect key="frame" x="0.0" y="18.5" width="0.0" height="14"/>
                                                 <string key="text">It seems that you did not enter any data via Healthkit
 </string>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="10"/>
@@ -109,10 +109,10 @@ More Step</string>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7o-ZX-JAk">
-                                        <rect key="frame" x="0.0" y="234.5" width="335" height="362.5"/>
+                                        <rect key="frame" x="0.0" y="197" width="335" height="400"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-bg-Q91">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="362.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stepsTableViewCell" rowHeight="92" id="HVd-lz-pp0" customClass="StepsTableViewCell" customModule="test_AliseumPodometeriOS" customModuleProvider="target">
