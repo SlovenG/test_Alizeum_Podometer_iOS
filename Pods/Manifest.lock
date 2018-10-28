@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (2.5.2)
+  - SwiftDate (5.0.12)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SwiftDate (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  SwiftDate: 4622d4ff136b123d11559d93955898c51ee21ed1
+
+PODFILE CHECKSUM: b069089d4bbc58ae4dfca2fa59dd95efab6e08dc
+
+COCOAPODS: 1.5.3

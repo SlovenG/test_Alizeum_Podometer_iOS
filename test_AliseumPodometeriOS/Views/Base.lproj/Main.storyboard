@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test_AliseumPodometeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hma-pu-KLz"/>
+                        <viewControllerLayoutGuide type="bottom" id="V2H-zs-OBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XY-Fv-bSO">
+                                <rect key="frame" x="87.5" y="278.5" width="200" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="md3-Bw-Fs1"/>
+                                    <constraint firstAttribute="height" constant="110" id="ufT-XQ-JV2"/>
+                                </constraints>
+                                <string key="text">One 
+More Step</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5XY-Fv-bSO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="530-d0-nQn"/>
+                            <constraint firstItem="5XY-Fv-bSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNM-JY-XhM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="5XY-Fv-bSO" id="9IL-f2-EfN"/>
+                        <segue destination="Akh-mb-Cfq" kind="show" identifier="dataStepsSegue" id="AMS-vZ-jUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Data Steps View Controller-->
+        <scene sceneID="kQS-H8-PJB">
+            <objects>
+                <viewController id="Akh-mb-Cfq" customClass="DataStepsViewController" customModule="test_AliseumPodometeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0U-cu-0f3"/>
+                        <viewControllerLayoutGuide type="bottom" id="6be-er-Av1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1a-AW-K97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="H0O-zn-N7T">
+                                <rect key="frame" x="20" y="40" width="335" height="597"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dC5-yW-coQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-5G-oVr">
+                                                <rect key="frame" x="67.5" y="0.0" width="200" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="AkS-k2-G2F"/>
+                                                    <constraint firstAttribute="width" constant="200" id="zP4-Ek-jII"/>
+                                                </constraints>
+                                                <string key="text">One 
+More Step</string>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-pA-rvD">
+                                        <rect key="frame" x="0.0" y="128" width="150" height="88.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-QY-NAk">
+                                                <rect key="frame" x="0.0" y="19.5" width="150" height="50"/>
+                                                <color key="backgroundColor" red="0.43524378540000003" green="0.43532308939999997" blue="0.43523877859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Thq-hL-kmk"/>
+                                                    <constraint firstAttribute="width" constant="150" id="jg1-fG-8yB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="10" maxY="10"/>
+                                                <state key="normal" title="Update">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapedUpdateButton:" destination="Akh-mb-Cfq" eventType="touchUpInside" id="B18-uB-TFW"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-Cq-2hO">
+                                                <rect key="frame" x="0.0" y="37.5" width="0.0" height="14"/>
+                                                <string key="text">It seems that you did not enter any data via Healthkit
+</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7o-ZX-JAk">
+                                        <rect key="frame" x="0.0" y="234.5" width="335" height="362.5"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-bg-Q91">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="362.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stepsTableViewCell" rowHeight="92" id="HVd-lz-pp0" customClass="StepsTableViewCell" customModule="test_AliseumPodometeriOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="335" height="92"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HVd-lz-pp0" id="dfu-y4-kFm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="91.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="meO-D0-RVS">
+                                                                    <rect key="frame" x="15" y="0.0" width="305" height="91.5"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="rJp-j5-wtO">
+                                                                            <rect key="frame" x="0.0" y="12" width="145" height="68"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2b-A9-Yzx">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iphone de Jess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDC-sr-haY">
+                                                                                    <rect key="frame" x="0.0" y="48.5" width="98" height="19.5"/>
+                                                                                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                                                                                    <color key="textColor" white="0.43493150684931509" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-Kb-j9G">
+                                                                            <rect key="frame" x="211" y="31" width="94" height="30"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1250" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX4-k5-suK">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footstep" translatesAutoresizingMaskIntoConstraints="NO" id="E56-te-aIS">
+                                                                                    <rect key="frame" x="64" y="0.0" width="30" height="30"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="30" id="7Sb-z4-dVX"/>
+                                                                                        <constraint firstAttribute="width" constant="30" id="FP9-Cx-SAd"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="meO-D0-RVS" secondAttribute="trailing" constant="15" id="Cbq-El-oU2"/>
+                                                                <constraint firstItem="meO-D0-RVS" firstAttribute="top" secondItem="dfu-y4-kFm" secondAttribute="top" id="KCR-jZ-nui"/>
+                                                                <constraint firstItem="meO-D0-RVS" firstAttribute="leading" secondItem="dfu-y4-kFm" secondAttribute="leading" constant="15" id="RFP-DD-TJK"/>
+                                                                <constraint firstAttribute="bottom" secondItem="meO-D0-RVS" secondAttribute="bottom" id="pnx-DK-cUf"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="dateLabel" destination="q2b-A9-Yzx" id="54x-jo-byk"/>
+                                                            <outlet property="sourceLabel" destination="xDC-sr-haY" id="4Iq-ht-jrK"/>
+                                                            <outlet property="stepsLabel" destination="oX4-k5-suK" id="kcM-lB-UAc"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9s4-bg-Q91" secondAttribute="bottom" id="OBh-7p-r6R"/>
+                                            <constraint firstAttribute="trailing" secondItem="9s4-bg-Q91" secondAttribute="trailing" id="eL7-qa-Fbq"/>
+                                            <constraint firstItem="9s4-bg-Q91" firstAttribute="top" secondItem="s7o-ZX-JAk" secondAttribute="top" id="mO4-RZ-oWf"/>
+                                            <constraint firstItem="9s4-bg-Q91" firstAttribute="leading" secondItem="s7o-ZX-JAk" secondAttribute="leading" id="wzE-3J-UiK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="s7o-ZX-JAk" secondAttribute="trailing" id="XxL-nw-cDO"/>
+                                    <constraint firstItem="s7o-ZX-JAk" firstAttribute="leading" secondItem="H0O-zn-N7T" secondAttribute="leading" id="c0T-ZA-ZJC"/>
+                                    <constraint firstItem="dC5-yW-coQ" firstAttribute="width" secondItem="H0O-zn-N7T" secondAttribute="width" id="mmE-82-fxk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.79342358732876717" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H0O-zn-N7T" firstAttribute="top" secondItem="g0U-cu-0f3" secondAttribute="bottom" constant="20" id="66m-yD-OTd"/>
+                            <constraint firstAttribute="trailing" secondItem="H0O-zn-N7T" secondAttribute="trailing" constant="20" id="Gsw-kK-1Vc"/>
+                            <constraint firstItem="H0O-zn-N7T" firstAttribute="leading" secondItem="G1a-AW-K97" secondAttribute="leading" constant="20" id="P7C-bo-Y1b"/>
+                            <constraint firstItem="6be-er-Av1" firstAttribute="top" secondItem="H0O-zn-N7T" secondAttribute="bottom" constant="30" id="ZG5-vG-2Mk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyDataLabel" destination="Q9i-Cq-2hO" id="tPH-Ao-MQa"/>
+                        <outlet property="parentTableView" destination="s7o-ZX-JAk" id="0Uw-pt-qg0"/>
+                        <outlet property="tableView" destination="9s4-bg-Q91" id="tJg-fn-RoG"/>
+                        <outlet property="updateButton" destination="5mP-QY-NAk" id="KHY-zn-cUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3J-Tm-HrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="footstep" width="170.5" height="170.5"/>
+    </resources>
+</document>
